@@ -1,1 +1,62 @@
-# ROS_Tensorflow_Setup
+# Step by step tutorial to install Ubuntu, ROS, Pycharm, NVIDIA GPU drivers and libraries, and Tensorflow  
+
+## Ubuntu 
+
+https://github.com/DanielPalaio/Ubuntu_Setup  
+
+## ROS
+
+http://wiki.ros.org/noetic/Installation/Ubuntu  
+
+## Pycharm
+
+**1.** In Ubuntu, search in the **Show Application** for **Ubuntu Software**  
+
+**2.** Search for **Pycharm** and install it (**VSCode also recommended**)
+
+**3.** To open Pycharm, type in the Ubuntu Terminal:  
+> pycharm-community  
+
+## GPU drivers
+
+**1.** In Ubuntu, search in the **Show Application** for **Software Updater** 
+   
+**2.** Select **Settings...**, and then the **Additional Drivers** tab
+
+**3.** On the **NVIDIA Corporation** choose the latest **(proprietary, tested) NVIDIA metapackage**  
+
+## CUDA and cudNN
+
+**1.** Verify the Kernel headers and dev packages, by running in the Ubuntu Terminal:  
+> sudo apt-get install linux-headers-$(uname -r)  
+
+**2.** Install CUDA  
+> **2.1** In https://developer.nvidia.com/cuda-downloads, select the target platform(Linux -> x86_64 -> Ubuntu -> 20.04 -> runfile (local)) 
+>> **2.1.1** Follow the base installation instrutions, **overriding the executable**. For example:
+>>> wget https://developer.download.nvidia.com/compute/cuda/11.2.1/local_installers/cuda_11.2.1_460.32.03_linux.run
+>>> sudo sh cuda_11.2.1_460.32.03_linux.run --override  
+
+>> **2.1.2** Select only to install the **CUDA toolkit**   
+
+> **2.2** Update the user login config file. Type in the Ubuntu Terminal:  
+>> nano ~/.bashrc, add:  
+
+>> **2.2.1** Add to the file the following command lines:  
+>>> export PATH=$PATH:usr/local/cuda-11.2/bin  
+>>> export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/localcuda-11.2/lib64  
+>>> export CUDADIR=/usr/local/cuda-11.2  
+
+>> **2.2.2** Close the file, and source it in the Ubuntu Terminal:  
+>>> source ~/.bashrc  
+
+**3.** Install cudNN  
+> **3.1** In https://developer.nvidia.com/rdp/cudnn-download#, download the **cuDNN Library** for **Linux (x86_64)**  
+> **3.2** Alocate the libraries. In the Ubuntu Terminal:  
+>> cd Downloads/  
+>> tar -xzvf cudnn-11.2-linux-x64-v8.1.1.33.tgz  
+>> sudo cp cuda/include/cudnn*.h /usr/local/cuda/include  
+>> sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64   
+>> sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*  
+  
+	
+
