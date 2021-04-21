@@ -55,7 +55,7 @@ https://github.com/DanielPalaio/Ubuntu_Setup
 > nvcc -V  
 > nvidia-smi  
 
-**7.** Test if the GPU is detected, and if CUDA is correctly installed. In Pycharm, run the following python script:
+**7.** Test if the GPU is detected, and if CUDA is correctly installed. In a python IDE, run the following script:
 > import tensorflow as tf  
 > print(tf.config.list_physical_devices('GPU'))  
 > print(tf.test.is_built_with_cuda())  
