@@ -63,7 +63,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 **5.** Install the required NVIDIA additional libraries. In the Ubuntu Terminal:  
 > sudo apt install nvidia-cuda-toolkit  
 
-**6.** Verify the CUDA version and GPU status. In the Ubuntu Terminal:  
+**6.** Verify the CUDA version and GPU status. In python environment:  
 > nvcc -V  
 > nvidia-smi  
 
