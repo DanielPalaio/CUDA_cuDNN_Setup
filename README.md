@@ -31,7 +31,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 > sudo apt-get install linux-headers-$(uname -r)  
 
 **2.** Install CUDA  
-> **2.1** In https://developer.nvidia.com/cuda-downloads, select the target platform(Linux -> x86_64 -> Ubuntu -> 20.04 -> runfile (local)) 
+> **2.1** In https://developer.nvidia.com/cuda-downloads, select the target platform (Linux -> x86_64 -> Ubuntu -> 20.04 -> runfile (local)) 
 >> **2.1.1** Follow the base installation instrutions, **overriding the executable**. For example:
 >>> wget https://developer.download.nvidia.com/compute/cuda/11.2.1/local_installers/cuda_11.2.1_460.32.03_linux.run
 >>> sudo sh cuda_11.2.1_460.32.03_linux.run --override  
