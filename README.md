@@ -2,7 +2,7 @@
 
 ## Ubuntu 
 
-To install Ubuntu, follow the tutorial of the the following repository:  
+To install Ubuntu (desktop version), consult the following repository:  
 https://github.com/DanielPalaio/Ubuntu_Setup  
 
 ## ROS
