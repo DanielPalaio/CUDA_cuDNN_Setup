@@ -1,4 +1,4 @@
-# Step by step tutorial to install Ubuntu, ROS, Pycharm, NVIDIA GPU drivers and libraries, and Tensorflow  
+# Step by step tutorial to install Ubuntu, ROS, Pycharm, and NVIDIA GPU drivers and libraries  
 
 ## Ubuntu 
 
@@ -57,6 +57,22 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 >> sudo cp cuda/include/cudnn*.h /usr/local/cuda/include  
 >> sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64   
 >> sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*  
+
+**4.** Reboot PC  
+
+**5.** Install the required NVIDIA additional libraries. In the Ubuntu Terminal:  
+> sudo apt install nvidia-cuda-toolkit  
+
+**6.** Verify the CUDA version and GPU status. In the Ubuntu Terminal:  
+> nvcc -V  
+> nvidia-smi  
+
+**7.** Test if the GPU is detected, and CUDA correctly installed. In a Pycharm terminal, run:
+> import tensorflow as tf  
+> print(tf.config.list_physical_devices('GPU'))  
+> print(tf.test.is_built_with_cuda())  
+
+
   
 	
 
