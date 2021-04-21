@@ -1,7 +1,8 @@
-# Step by step tutorial to install Ubuntu, ROS, Pycharm, and NVIDIA GPU drivers and libraries  
+# NVIDIA CUDA and cuDNN - Step by step tutorial to install NVIDIA GPU drivers and libraries in Ubuntu  
 
 ## Ubuntu 
 
+To install Ubuntu, follow the tutorial of the the following repository:  
 https://github.com/DanielPalaio/Ubuntu_Setup  
 
 ## ROS
