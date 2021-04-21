@@ -1,4 +1,4 @@
-# NVIDIA CUDA and cuDNN - Step by step tutorial to install NVIDIA GPU drivers and libraries in Ubuntu  
+# NVIDIA CUDA and cudNN - Step by step tutorial to install NVIDIA GPU drivers and libraries in Ubuntu  
 
 ## Ubuntu 
 
