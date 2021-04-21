@@ -5,19 +5,6 @@
 To install Ubuntu (desktop version), consult the following repository:  
 https://github.com/DanielPalaio/Ubuntu_Setup  
 
-## ROS
-
-http://wiki.ros.org/noetic/Installation/Ubuntu  
-
-## Pycharm
-
-**1.** In Ubuntu, search in the **Show Application** for **Ubuntu Software**  
-
-**2.** Search for **Pycharm** and install it (**VSCode also recommended**)
-
-**3.** To open Pycharm, type in the Ubuntu Terminal:  
-> pycharm-community  
-
 ## GPU drivers
 
 **1.** In Ubuntu, search in the **Show Application** for **Software Updater** 
