@@ -1,5 +1,5 @@
 # NVIDIA CUDA and cudNN - Step by step tutorial to install NVIDIA GPU drivers and libraries in Ubuntu  
-**To setup Pycharm + Anaconda + GPU in Windows, consult its respective setup file [here](Conda + CUDA Setup (Windows).txt)**.
+To setup Conda + GPU (+ Pycharm) on Windows, consult its respective setup file [here](Conda_CUDA Windows Setup).
 
 ## Ubuntu 
 
