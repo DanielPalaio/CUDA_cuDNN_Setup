@@ -63,11 +63,11 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 **5.** Install the required NVIDIA additional libraries. In the Ubuntu Terminal:  
 > sudo apt install nvidia-cuda-toolkit  
 
-**6.** Verify the CUDA version and GPU status. In python environment:  
+**6.** Verify the CUDA version and GPU status. In the Ubuntu Terminal:  
 > nvcc -V  
 > nvidia-smi  
 
-**7.** Test if the GPU is detected, and if CUDA is correctly installed. In a Pycharm terminal, run:
+**7.** Test if the GPU is detected, and if CUDA is correctly installed. In Pycharm, run the following python script:
 > import tensorflow as tf  
 > print(tf.config.list_physical_devices('GPU'))  
 > print(tf.test.is_built_with_cuda())  
